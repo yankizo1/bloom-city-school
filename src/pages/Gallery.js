@@ -1,24 +1,48 @@
-import React from "react";
+import bloom1 from "../assets/bloom1.jpg";
+import bloom2 from "../assets/bloom2.jpg";
+import bloom3 from "../assets/bloom3.jpg";
+import bloom4 from "../assets/bloom4.jpg";
+import bloom5 from "../assets/bloom5.jpg";
 
 function Gallery() {
   return (
-    <div className="page section">
-      <div className="section-title">
-        <h3>School Gallery</h3>
-        <p>
-          Take a look at the joyful learning environment, classroom activities,
-          and special moments at Bloom City School.
-        </p>
-      </div>
 
-      <div className="gallery-grid">
-        <div className="gallery-box">Classroom Learning</div>
-        <div className="gallery-box">Creative Activities</div>
-        <div className="gallery-box">Reading Time</div>
-        <div className="gallery-box">Play Time</div>
-        <div className="gallery-box">Outdoor Fun</div>
-        <div className="gallery-box">School Events</div>
-      </div>
+    <div>
+
+      <section className="section">
+
+        <h2>School Gallery</h2>
+
+        <p>
+          Explore moments from our classrooms,
+          creative arts, ballet sessions,
+          martial arts training, and student
+          activities at Bloom City School.
+        </p>
+
+      </section>
+
+
+      {/* GALLERY GRID */}
+
+      <section className="section">
+
+        <div className="gallery">
+
+          <img src={bloom1} alt="Bloom City" />
+
+          <img src={bloom2} alt="Bloom City" />
+
+          <img src={bloom3} alt="Bloom City" />
+
+          <img src={bloom4} alt="Bloom City" />
+
+          <img src={bloom5} alt="Bloom City" />
+
+        </div>
+
+      </section>
+
     </div>
   );
 }

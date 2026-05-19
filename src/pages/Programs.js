@@ -1,59 +1,109 @@
-import React from "react";
-
 function Programs() {
   return (
-    <div className="page section">
-      <div className="section-title">
-        <h3>Our Programmes</h3>
+
+    <div>
+
+      <section className="section">
+
+        <h2>Our Programs</h2>
+
         <p>
-          At Bloom City School, we provide age-appropriate learning in a warm,
-          safe, and nurturing environment where every child can grow with
-          confidence.
+          Bloom City School offers a balanced and
+          modern educational experience designed
+          to develop students academically,
+          creatively, socially, and physically.
         </p>
-      </div>
 
-      <div className="program-list">
-        <div className="program-item">
-          <h4>👶 Creche</h4>
-          <p>
-            Our Creche programme is designed for infants and toddlers who need a
-            loving, secure, and caring space while developing their early social,
-            emotional, and physical skills.
-          </p>
-          <p>
-            Children enjoy supervised play, rest time, feeding support, music,
-            movement, and gentle early stimulation in a child-friendly setting.
-          </p>
+      </section>
+
+
+      {/* PROGRAM CARDS */}
+
+      <section className="section features">
+
+        <div className="feature-cards">
+
+          <div className="feature-card">
+
+            <h3>Early Years</h3>
+
+            <p>
+              A strong foundation program focused
+              on creativity, literacy, numeracy,
+              and social development for young learners.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Primary Education</h3>
+
+            <p>
+              Comprehensive academic learning
+              combined with leadership,
+              discipline, and innovation.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Digital Learning</h3>
+
+            <p>
+              Students are introduced to
+              computers, technology, and
+              practical digital skills.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Creative Arts</h3>
+
+            <p>
+              Ballet, music, dance, arts,
+              and creativity programs that
+              help students express themselves.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Sports & Martial Arts</h3>
+
+            <p>
+              Physical fitness and martial arts
+              programs help build confidence,
+              discipline, and teamwork.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Leadership Training</h3>
+
+            <p>
+              Students are trained to become
+              responsible leaders with strong
+              character and values.
+            </p>
+
+          </div>
+
         </div>
 
-        <div className="program-item">
-          <h4>📚 Nursery 1</h4>
-          <p>
-            Nursery 1 introduces children to foundational learning through fun
-            and engaging activities that build confidence, communication, and
-            curiosity.
-          </p>
-          <p>
-            The programme includes early literacy, number recognition, rhymes,
-            storytelling, guided play, colour identification, and social
-            interaction.
-          </p>
-        </div>
+      </section>
 
-        <div className="program-item">
-          <h4>🎨 Nursery 2</h4>
-          <p>
-            Nursery 2 prepares children for the next stage of learning with a
-            stronger focus on academic readiness, creativity, independence, and
-            communication.
-          </p>
-          <p>
-            Pupils take part in reading readiness, writing practice, number
-            activities, art, music, group learning, and confidence-building
-            exercises.
-          </p>
-        </div>
-      </div>
     </div>
   );
 }

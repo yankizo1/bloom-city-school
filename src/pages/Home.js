@@ -1,92 +1,170 @@
-import React from "react";
+import logo from "../assets/logo.jpg";
+
+import bloom1 from "../assets/bloom1.jpg";
+import bloom2 from "../assets/bloom2.jpg";
+import bloom3 from "../assets/bloom3.jpg";
+import bloom4 from "../assets/bloom4.jpg";
+import bloom5 from "../assets/bloom5.jpg";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div>
-      <section className="hero">
-        <div className="hero-content">
-          <p className="hero-small">WELCOME TO</p>
-          <h1>Bloom City School</h1>
-          <h2>Where Little Minds Bloom</h2>
-          <p className="hero-text">
-            We provide a safe, caring, and inspiring environment where children
-            grow through learning, play, creativity, and confidence-building.
-          </p>
 
-          <div className="hero-buttons">
-            <Link to="/admissions" className="btn-primary">
-              📝 Apply Now
-            </Link>
-            <Link to="/programs" className="btn-secondary">
-              View Programs
-            </Link>
-          </div>
+      {/* HERO SECTION */}
+
+      <section className="hero">
+
+        <div className="hero-overlay">
+
+          <img
+            src={logo}
+            alt="Bloom City Logo"
+            className="hero-logo"
+          />
+
+          <h1>
+            Raising Future Leaders Through Excellence
+          </h1>
+
+          <p>
+            Bloom City School combines academics,
+            technology, creativity, discipline,
+            and moral excellence to prepare children
+            for the future.
+          </p>
+           <Link to="/admissions">
+
+  <button>
+    Apply For Admission
+  </button>
+
+</Link>
+
         </div>
+
       </section>
+
+
+      {/* ABOUT */}
 
       <section className="section">
-        <div className="section-title">
-          <h3>Why Parents Choose Us</h3>
-          <p>
-            At Bloom City School, every child is valued, guided, and encouraged
-            to shine.
-          </p>
-        </div>
 
-        <div className="card-grid">
-          <div className="card">
-            <h4>Safe Environment</h4>
-            <p>
-              A warm, secure, and child-friendly environment for healthy growth.
-            </p>
-          </div>
+        <h2>About Bloom City School</h2>
 
-          <div className="card">
-            <h4>Qualified Teachers</h4>
-            <p>
-              Caring educators dedicated to early childhood development and
-              learning.
-            </p>
-          </div>
+        <p>
+          Bloom City School is committed to building
+          confident, intelligent, disciplined,
+          and creative young leaders through
+          quality education and practical learning.
+        </p>
 
-          <div className="card">
-            <h4>Learning Through Play</h4>
-            <p>
-              We combine structured learning with fun and engaging activities.
-            </p>
-          </div>
-        </div>
       </section>
 
-      <section className="section light-section">
-        <div className="section-title">
-          <h3>Our Classes</h3>
-          <p>Programs designed for every stage of your child's early journey.</p>
+
+      {/* FEATURES */}
+
+      <section className="section features">
+
+        <h2>Why Choose Bloom City?</h2>
+
+        <div className="feature-cards">
+
+          <div className="feature-card">
+
+            <h3>Digital Learning</h3>
+
+            <p>
+              Students are exposed to practical
+              computer and technology-based learning.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Creative Arts</h3>
+
+            <p>
+              We encourage creativity through ballet,
+              dance, arts, and extracurricular activities.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Discipline & Fitness</h3>
+
+            <p>
+              Martial arts and physical activities
+              help build confidence and discipline.
+            </p>
+
+          </div>
+
         </div>
 
-        <div className="card-grid">
-          <div className="card">
-            <h4>👶 Creche</h4>
-            <p>Gentle care and early stimulation for infants and toddlers.</p>
-          </div>
-
-          <div className="card">
-            <h4>📚 Nursery 1</h4>
-            <p>
-              A strong start with songs, storytelling, numbers, letters, and
-              guided play.
-            </p>
-          </div>
-
-          <div className="card">
-            <h4>🎨 Nursery 2</h4>
-            <p>
-              Creative and academic preparation for the next stage of learning.
-            </p>
-          </div>
-        </div>
       </section>
+
+
+      {/* GALLERY */}
+
+      <section className="section">
+
+        <h2>School Activities</h2>
+
+        <div className="gallery">
+
+          <img src={bloom1} alt="Bloom City" />
+          <img src={bloom2} alt="Bloom City" />
+          <img src={bloom3} alt="Bloom City" />
+          <img src={bloom4} alt="Bloom City" />
+          <img src={bloom5} alt="Bloom City" />
+
+        </div>
+
+      </section>
+
+
+      {/* ADMISSION */}
+
+      <section className="admission">
+
+        <h2>Admissions Ongoing</h2>
+
+        <p>
+          Give your child a strong educational
+          foundation in a nurturing and inspiring
+          environment.
+        </p>
+
+        <Link to="/contact">
+
+        <button>
+         Enroll Today
+         </button>
+
+         </Link>
+      </section>
+
+
+      {/* FOOTER */}
+
+      <footer className="footer">
+
+        <h3>Bloom City School</h3>
+
+        <p>A City Set on the Hill</p>
+
+        <p>Phone: +234 703 373 3763</p>
+
+        <p>Email: info@bloomcityschool.com</p>
+
+      </footer>
+
     </div>
   );
 }
